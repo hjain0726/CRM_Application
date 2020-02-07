@@ -47,7 +47,7 @@ namespace CRM_Project
                     Console.WriteLine(pname+" "+qty);
                     foreach (Product product in Products)
                     {
-                        if (product.product_name.Equals(pname)&&(product.product_stock<=qty))
+                        if (product.product_name.Equals(pname)&&(product.product_stock>=qty))
                         {
                             Console.WriteLine("You successfully bought this product");
 
